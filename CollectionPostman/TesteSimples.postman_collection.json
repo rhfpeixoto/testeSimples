@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "a5c882b4-7d10-4fce-9c42-29d4148b3d51",
+		"name": "TesteSimples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar Mais Quentes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44342/Comum/GetFire",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44342",
+					"path": [
+						"Comum",
+						"GetFire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Mais Frios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44342/Comum/GetCold",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44342",
+					"path": [
+						"Comum",
+						"GetCold"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Previsão Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Texto\" : \"São\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44342/Previsao/Search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44342",
+					"path": [
+						"Previsao",
+						"Search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
